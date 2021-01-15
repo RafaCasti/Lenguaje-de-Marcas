@@ -1,109 +1,136 @@
-<!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>10 Elementos HTML</title>
-</head>
-
-<body>
-    
-    <div id="content"> <!--Para centrar el contenido -->
-      <!-- HEADER -->
-      <header>
-        <h1>10 códigos HTML básicos para páginas web (con ejemplos)</h1>
-        <p><span id="avatar"></span>Alejandra Rubio Bravo <date>22-07-2019</date></p>
-        <figure id="social">
-          <figcaption>El lenguaje secreto de la tecnología</figcaption>
-        </figure>
-      </header>
-     
-      <!-- NAV -->
-      <nav>
-        <ul id="menu-social">
-          <li><a href="#"><img class="twitter" src="https://sinuhenavarro.github.io/images4codepen/twitter.png"/></a></li>
-          <li class ="facebook"><a href="#"><img class="twitter" src="https://sinuhenavarro.github.io/images4codepen/facebook.png"/></a></li>
-          <li class="linkdin"><a href="#"><img class="twitter" src="https://sinuhenavarro.github.io/images4codepen/linkldn.png"/></a></li>
-          <li class="pinterest"><a href="#"><img class="twitter" src="https://sinuhenavarro.github.io/images4codepen/pinterest.png"/></a></li>
-        </ul>
-      </nav>
-      
-        <svg version="1.1"
+    <head>
+        <title>10 codigos HTML basicos para paginas web</title>
+        <meta author="Rafa" Content="Rafael Castillero"/>
+        <link rel="stylesheet" href="./redes.css">
+    </head>
+    <body>
+        
+        <div class="Menu">
+            <nav>
+                <a href="#" class="Menu">GoDaddy</a>
+                <a href="#" class="Menu">Ayuda</a>
+                <a href="#" class="Menu">Blog</a>
+                <a href="#" class="Menu">Estado del sistema</a>
+            </nav>
+        </div>
+        <div class="html">
+        <h1>¿Que es html?</h1>
+         <aside>
+            <h2>Productos Mencionados</h2>
+            <strong>Creador de sistios webs</strong>
+            <button type="button" onclick="location.href='https://www.godaddy.com/es-es/paginas-web/creador-paginas-web'">Conoce mas</button>
+            <br>
+            <strong>Sitios web de Wordpress</strong>
+            <button type="button" onclick="location.href='https://es.wordpress.com/'">Conoce mas</button>
+            </aside>
+        <p>Las siglas HTML vienen de “Hyper Text Markup Language” o Lenguaje Marcado de Hipertexto. Los códigos HTML son el lenguaje universal que se utiliza para crear y dar formato a los sitios web. Funcionan en cualquier sistema operativo (Windows, Mac, Linux, etc.) y con cualquier navegador (Chrome, Explorer o Mozilla).</p>
+        <img src="2.jpg">
+            <svg version="1.1"
      baseProfile="full"
      width="300" height="200"
      xmlns="http://www.w3.org/2000/svg">
      <circle cx="50" cy="60" r="60" />
     <rect width="10mm" height="50mm" rx="10mm" ry="1mm" style="fill: red; stroke: black; stroke-width: 1mm;"></rect>
     <line x1="10mm" y1="32mm" x2="45mm" y2="75mm" style="stroke:#000; stroke-width:3mm" />
-    <polygon points="50,0, 62,37, 100,37, 70,61, 82,100,  50,75,  20,100,  31,61, 0,37,  39,37,  50,0" fill="white" stroke="black" stroke-width="3"/>
-</svg>
-        
-      <!-- MAIN -->
-      <main>
-        <p>Estando en el proceso de creación de tu página web, puede que te hayas topado en internet con términos como editor HTML, código HTML o etiquetas HTML. </p>
-          <p>Aunque la mayoría de las plataformas para crear sitios web (como WordPress) son bastante fáciles de utilizar y no requieren de grandes conocimientos técnicos, conocer más sobre HMTL te ayudará a entender conceptos de programación y <strong>te preparará para cuando sea hora de modificar o mejorar la apariencia de tu sitio web.</strong></p>
-          <p>Por eso, en esta ocasión te compartimos algunas nociones básicas del tema, así como los <strong>10 códigos HTML que debes conocer</strong>, acompañados de ejemplos para que aprendas a utilizarlos.</p>
-          <h2>¿Qué es el HTML?</h2>
-          <p>Las siglas HTML vienen de “Hyper Text Markup Language” o Lenguaje Marcado de Hipertexto.</p>
-          <p>Los códigos HTML son el lenguaje universal que se utiliza para crear y dar formato a los sitios web. Funcionan en cualquier sistema operativo (Windows, Mac, Linux, etc.) y con cualquier navegador (Chrome, Explorer o Mozilla).</p>
-          <img src="https://cl.godaddy.com/blog/wp-content/uploads/10-c%C3%B3digos-html-para-p%C3%A1ginas-web-y-para-qu%C3%A9-sirven_2.jpg" alt="Código HTML"/>
-          <h2>Etiquetas HTML</h2>
-          <p>El lenguaje HTML está conformado por un sistema de etiquetas en serie o tags, que incluyen instrucciones que los navegadores traducen como:</p>
-          <ul>
-            <li>Imágenes</li>
-            <li>Texto</li>
-            <li>Hipervínculos</li>
-            <li>Listas de palabras</li>
-            <li>TAblas, etc.</li>
-          </ul>
-          <p>Así, para que un elemento de este tipo pueda ser leído, la etiqueta debe tener dos partes: una etiqueta de inicio (<etiqueta>) y una de cierre (</etiqueta>) entre guiones (< >).</p>
-          <p>Por ejemplo, las etiquetas &lt;strong&gt; y &lt;/strong&gt; definen un texto en negrita. Si en nuestro documento HTML escribimos una frase con el siguiente código:</p>
-          <code>&lt;strong&gt; Este texto va en negrita &lt;/strong&gt;</code>
-          <p>El resultado será</p>
-          <p>¡Inténtalo tú mismo! Inserta el código anterior en un <a href="https://codebeautify.org/htmlviewer/">visualizador HTML.</a></p>
-          <p>Como seguro habrás notado, la etiqueta inicial sirve para definir el comportamiento del contenido (por ejemplo, si un texto irá en negritas o si tendrá un tamaño específico), y la de cierre le indica al navegador hasta dónde debe llegar ese comportamiento. Para construir los “cierres” sólo necesitas agregar una diagonal (/) al inicio de la etiqueta.</p>
-          <blockquote>Recuerda: de no poner la etiqueta de cierre, todo lo que escribas después de la etiqueta de inicio se desplegará con ese formato.</blockquote>
-          <p>Cabe destacar que no todas las etiquetas necesitan forzosamente un “cierre”. Por ejemplo, el código <br> para introducir saltos de línea es considerado un “elemento vacío” y puede ir por sí solo en cualquier parte del cuerpo del texto.</p>
-          <p>Para la creación de sitios web completos, usar documentos HTML te permitirá tener organizados en un solo lugar todos los códigos que vayas a usar en cada página. Este documento lo puedes elaborar en el editor de textos de tu preferencia (Microsoft Word o el mismo bloc de notas), y solo debes asegurarte de guardarlo como .html u otro formato web (es un documento por cada página).</p>
-      <blockquote>  Si quieres sacar máximo provecho de las herramientas digitales y aprender más de GoDaddy, ¡no te pierdas nuestros webinars! Suscríbete en <a href="#">godaddywebinarslatam.com</a></blockquote>
-        <hr noshade>
-      </main> 
-      
-     <section id="whoami">
-       <p class="hashtags"><a href="#">#creadorsitiosweb-cl</a> <a href="#">#paginaswebmarketing-ar-cl</a> <a href="#">#creadordesitiosweb-mx-cl</a></p>
-        <img class="face" src="https://cl.godaddy.com/blog/wp-content/uploads//CARB-150x150.jpg" alt="Alejandra Rubio Bravo">
-        <div class="whoami">
-          <h3>Alejandra Rubio Bravo</h3>
-          <p>Nativa del sur de la Ciudad de México, estudié Comunicación y me especialicé en corrección de estilo y Marketing Digital. Eterna enamorada de las letras, apasionada con la tecnología y feliz colaboradora en Virket, la empresa donde me encontré con la increíble riqueza de formas y oportunidades para comunicar y planificar estrategias enfocadas a innovar la relación cliente-empresa.</p>
-          <button>Más artículos por Alejandra</button>
+    <polygon points="50,0, 82,100, 0,37, 100,37, 20,100, 50,0" fill="white" stroke="black" stroke-width="3"/>
+            </svg>
         </div>
-       
-     </section> 
-      
-      <!--************** FOOTER ************** -->
-      <footer>
-          <p>El uso de este sitio está sujeto a las condiciones de uso expresas. Al utilizar este sitio, tú indicas que aceptas cumplir con estos <a href="https://cl.godaddy.com/agreements/showdoc?pageid=UTOS&app_hdr=0">Términos de servicio universales.</a></p>
-  
-         <p>
-           <a href="#">Legal</a> | <a href="#">Política de privacidad</a> | <a href="#">Cookies</a>
-           
-         </p>
-         <p>Copyright © 1999 – 2020 GoDaddy Operating Company, LLC. Todos los derechos reservados.</p>
-       </footer>
-      
-      </div><!-- Content -->
-    <!-- ASIDE -->
-      <aside>
-         <h2>Productos mencionados</h2>
-        <section class="productos">
-          <h3>Creador de sitios web</h3>
-          <h3>Sitios web de WordPress</h3>
-        </section>
-        <section class="botones">
-          <button>Conoce más</button>
-          <button>Conoce más</button>
-        </section>
-      </aside>
-  </body>
-  </html>
+        <header>
+			<a href="https://es-es.facebook.com/" target="_blank" class="social"> <img src="facebook.png"></a> 
+			<a href="http://www.twitter.com" target="_blank" class="social"> <img src="twitter.png"></a>
+			<a href="http://www.pinterest.com" target="_blank" class="social"> <img src="pinterest.png"></a>
+			<a href="https://es.linkedin.com/" target="_blank" class="social"> <img src="linkedin.png"></a> 
+        </header>
+        <div class="body">
+        <h2>Estructura Basica HTML</h2>
+                <p>Antes de ver los códigos básicos, debes saber que la primera línea de tu documento HTML siempre debe contener la etiqueta <!DOCTYPE html>. Esto hará que el código de tu sitio sea legible en cualquier navegador.
+                <p/>
+                <p>
+                    Ahora bien, un documento HTML bien armado tiene cuatro etiquetas esenciales para que el contenido se distribuya correctamente. Estas son:  
+                </p>
+        <h2>1. HTML</h2>
+            <p>html está al inicio de un documento HTML e indica a los navegadores que la página tiene código HTML para que pueda leerlo de esa forma. Siguiendo la sintaxis del lenguaje, la etiqueta de cierre html será el último elemento del documento.
+            </p>
+        <h2>2. Encabezado</h2>
+            <p>head es la etiqueta que se utiliza para el encabezado de la página. Su principal función es contener toda la información del funcionamiento del sitio. Debido a esto, es un código encriptado que las personas que entran a la página no pueden ver.
+            </p>
+        <h2>3. Titulo de la pagina</h2>
+            <p>title es la etiqueta que da a tu sitio un nombre para que los usuarios puedan identificarlo. Es el título que puedes ver en las pestañas del navegador.
+            </p>
+        <h2>4. Cuerpo</h2>
+            <p>body es la etiqueta que contiene todos los elementos individuales del sitio. O dicho de otra forma, comprende todo el contenido visible del sitio. Aquí podrás insertar texto, imágenes, videos o cualquier otra funcionalidad que desees mostrar.
+            </p>
+                <strong>Ejemplo de las cuatro etiquetas esenciales:</strong>
+                <br/>
+                <br/>
+                <strong>Si creas un documento .html con este código y lo abres en tu navegador, verás algo como esto:</strong>
+                <br/>
+                    <img src="1.png">
+                    <p>Con las cuatro etiquetas anteriores ya tienes el “esqueleto” de tu página web. La siguiente tarea sería introducir texto (entre los tags body y body) y controlar sus etiquetas. Veamos las más elementales.</p>
+        <h2>5. Titulos y Subtitulos</h2>
+                    <p>h1 h2… h6 son etiquetas que funcionan para agregar títulos y subtítulos en el cuerpo del texto, lo cual ayuda a jerarquizar la información. Por cierto, te recomendamos utilizar la etiqueta H1 sólo una vez dentro del contenido.</p>
+                    <strong>Resultado</strong>
+                        <h1>Esta es una etiqueta H1. Utilízala en el título.</h1>
+                        <h2>Esta es una etiqueta H2. Utilízala en los encabezados de secciones.</h2>
+                        <h3>Esta es una etiqueta H3. Utilízala en sub-secciones.</h3>
+                        <h4>Esta es una etiqueta H4. No se usan muy a menudo.</h4>
+                        <h5>Esta es una etiqueta H5.</h5>
+                        <h6>Esta es una etiqueta H6.</h6>
+        <h2>6. Parrafos</h2>
+                    <p>Las etiquetas p y br te ayudarán a organizar el texto en párrafos y saltos de línea.</p>
+                    <strong>Ejemplo:</strong>
+                    <p>Tu primer parrafo</p>
+                    <p>Tu segundo parrafo</p>
+                    <p>Un enunciado. <br/>
+                        Un segundo enunciado pegado al primero.</p>
+        <h2>7. Hipervinculos</h2>
+                    <p>a te permite insertar un hipervínculo a la página. Por ejemplo, el link hacia tus redes sociales o hacia otro sitio web con el que desees conectar tu página.</p>
+                    <strong>Resultado</strong>
+                    <br/>
+                    <br/>
+                    <a href="https://mx.godaddy.com/blog">Ejemplo de un blog</a>
+                    <p>Hemos usado el atributo href</p>
+                       
+        <h2>8. Listas de Indices</h2>
+                    <p>ol sirve para agregar listas numeradas y ul para agregar bullets, los cuales mejoran la legibilidad de tus textos.</p>
+                    <strong>Resultado</strong>
+                    <br/>
+                    <br/>
+                        <ul>
+                            <li>Elemento 1</li>
+                            <li>Elemento 2</li>
+                            <li>Elemento 3</li>
+                            <li>Elemento 4</li>
+                        </ul>
+        <h2>9. Estilo</h2>
+                    <p>Aunque usualmente se ubica dentro de la etiqueta head, con el atributo style puedes definir el estilo de tu contenido en términos de:</p>
+                        <ul>
+                            <li>Color</li>
+                            <li>Tamaño de fuente</li>
+                            <li>Tipografia, etc...</li>
+                        </ul>
+                    <strong>Resultado</strong>
+                        <p style="color: blue; font-size: 100px">HOLA MUNDO</p>
+        </div>
+        <section id="whoami">
+     <p class="hashtags"><a href="#">#creadorsitiosweb-cl</a> <a href="#">#paginaswebmarketing-ar-cl</a> <a href="#">#creadordesitiosweb-mx-cl</a></p>
+      <img class="face" src="https://cl.godaddy.com/blog/wp-content/uploads//CARB-150x150.jpg" alt="Alejandra Rubio Bravo">
+      <div class="whoami">
+        <h3>Alejandra Rubio Bravo</h3>
+        <p>Nativa del sur de la Ciudad de México, estudié Comunicación y me especialicé en corrección de estilo y Marketing Digital. Eterna enamorada de las letras, apasionada con la tecnología y feliz colaboradora en Virket, la empresa donde me encontré con la increíble riqueza de formas y oportunidades para comunicar y planificar estrategias enfocadas a innovar la relación cliente-empresa.</p>
+        <button>Más artículos</button>
+      </div>
+     
+   </section> 
+    <footer>
+        <p>El uso de este sitio está sujeto a las condiciones de uso expresas. Al utilizar este sitio, tú indicas que aceptas cumplir con estos <a href="https://cl.godaddy.com/agreements/showdoc?pageid=UTOS&app_hdr=0">Términos de servicio universales.</a></p>
+
+       <p>
+         <a href="#">Legal</a> | <a href="#">Política de privacidad</a> | <a href="#">Cookies</a>
+         
+       </p>
+       <p>Copyright © 1999 – 2020, Todos los derechos reservados.</p>
+     </footer>
+    </body>
 </html>
