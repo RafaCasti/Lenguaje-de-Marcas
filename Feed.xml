@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+    <title>Rafael Castillero</title>
+        <link href="https://github.com/RafaCasti/RafaCasti/blob/g-pages/"/>
+        <updated>2021-01-29T18:43:00Z</updated>
+        <id>https://github.com/RafaCasti/RafaCasti</id>
+        <subtitle>ATOM</subtitle>
+        <entry>
+            <title>10 etiquetas HTML</title>
+            <link href="https://github.com/RafaCasti/RafaCasti/blob/g-pages/"/>
+            <content>Ejemplo Menu-Social</content>
+            <author>
+                <name>Rafael Castillero</name>
+                <email>a20calora@iesgrancapitan.org</email>
+            </author>
+            <id>https://github.com/RafaCasti/RafaCasti#0</id>
+            <updated>2021-01-29T18:45:00Z</updated>
+        </entry>
+        <entry>
+            <title>Menu-Social</title>
+            <link href="https://github.com/RafaCasti/RafaCasti/blob/g-pages/"/>
+            <content>Ejemplo Menu-Social</content>
+            <author>
+                <name>Rafael Castillero</name>
+                <email>a20calora@iesgrancapitan.org</email>
+            </author>
+            <id>https://github.com/RafaCasti/RafaCasti#1</id>
+            <updated>2021-01-29T19:13:00Z</updated>
+            <rights>Copyright © 2021 Rafael Castillero Todos los derechos reservados.</rights>
+        </entry>
+    </feed>
